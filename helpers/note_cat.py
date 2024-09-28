@@ -15,7 +15,7 @@ categories = {
     'Floral': [
         'rose', 'jasmine', 'lily', 'lavender', 'gardenia', 'peony', 'violet', 
         'carnation', 'orchid', 'magnolia', 'tuberose', 'geranium', 'freesia', 
-        'lilac', 'cherry blossom', 'orange blossom', 'lotus', 'ylang-ylang'
+        'lilac', 'cherry blossom', 'orange blossom', 'lotus', 'ylang-ylang', 'iris', 'cotton flower', 'daisy', 'tulip', 'palmarosa', 'edelweiss'
     ],
     'Fruity': [
         'apple', 'strawberry', 'peach', 'pear', 'raspberry', 'blackberry', 
@@ -54,12 +54,12 @@ categories = {
     'Aquatic': [
         'sea salt', 'marine', 'ocean', 'seaweed', 'water lily', 'lotus', 
         'driftwood', 'beach', 'rain', 'cucumber', 'watermelon', 'melon', 
-        'sea breeze', 'ozone', 'fresh water'
+        'sea breeze', 'ozone', 'fresh water', 'marine', 
     ],
     'Gourmand': [
         'coffee', 'almond', 'coconut', 'praline', 'licorice', 'chocolate', 
         'caramel', 'vanilla', 'hazelnut', 'cinnamon', 'milk', 'cream', 
-        'butter', 'bread', 'popcorn', 'honey', 'maple syrup'
+        'butter', 'bread', 'popcorn', 'honey', 'maple syrup', ''
     ]
 }
 
