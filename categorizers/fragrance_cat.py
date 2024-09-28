@@ -6,10 +6,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # load cat notes
-categorized_notes_df = pd.read_csv('../categorized_notes.csv')
+categorized_notes_df = pd.read_csv('../data/categorized_notes.csv')
 
 # load fragrances
-perfumes_df = pd.read_excel('../cleaned_perfume_data.xlsx') 
+perfumes_df = pd.read_excel('../data/cleaned_perfume_data.xlsx') 
 
 # reconstruct categories from the CSV
 # each category from the unique notes file is used as a key to store all notes in that category as a list
@@ -47,6 +47,6 @@ def categorize_fragrance(notes):
 perfumes_df['Top Categories'] = perfumes_df['notes'].apply(lambda x: categorize_fragrance(x.split(',')))
 
 # save results
-perfumes_df.to_excel('categorized_perfumes.xlsx', index=False)
+perfumes_df.to_excel('../data/categorized_perfumes.xlsx', index=False)
 
 print("Fragrance categorization complete. Results saved to 'categorized_perfumes.xlsx'")

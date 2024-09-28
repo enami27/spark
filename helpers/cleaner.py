@@ -1,7 +1,7 @@
 import pandas as pd
 
 # import excel file
-file_path = '../data.xlsx' 
+file_path = '../data/data.xlsx' 
 df = pd.read_excel(file_path)
 
 # check for missing values
@@ -20,6 +20,6 @@ df_cleaned = df_cleaned.drop_duplicates(subset=['perfume', 'brand', 'notes'])
 df_cleaned.loc[:, 'notes'] = df_cleaned['notes'].apply(lambda x: x.split(', '))
 
 # save new cleaned list
-df_cleaned.to_excel('cleaned_perfume_data.xlsx', index=False)
+df_cleaned.to_excel('../data/cleaned_perfume_data.xlsx', index=False)
 
 print("Cleaned data has been saved to 'cleaned_perfume_data.txt'")

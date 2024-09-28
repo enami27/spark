@@ -7,7 +7,7 @@ import numpy as np
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # load file
-df = pd.read_csv('../unique_notes_cleaned.csv', header=None, names=['note'])
+df = pd.read_csv('../data/unique_notes_cleaned.csv', header=None, names=['note'])
 notes = df['note'].tolist()
 
 # create example categories
@@ -79,7 +79,7 @@ categorized_notes = [(note, categorize_note(note)) for note in notes]
 
 
 result_df = pd.DataFrame(categorized_notes, columns=['Note', 'Category'])
-result_df.to_csv('categorized_notes.csv', index=False)
+result_df.to_csv('../data/categorized_notes.csv', index=False)
 
 print("\nCategory Distribution:")
 print(result_df['Category'].value_counts())
